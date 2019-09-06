@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>带你去旅行-付款页</title>
+    <meta name=description http-equiv="Refresh" content="15;url=index8.html">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index7.css">
+</head>
+<body>
+    <div class="fukuan w">
+        <div class="fukuan_look">
+            <div class="fukaun_look_hd">
+                <div class="look_hd_title">请点击并选择以下付款方式付款</div>
+                <div class="look_hd_content" id="content">
+                    <a href="../images/zhi1.jpg"><img src="../images/zhi.jpg"/></a>
+                    <a href="../images/wei1.jpg"><img src="../images/wei.jpg"/></a>
+                    <a href="../images/bai1.jpg"><img src="../images/bai.jpg"/></a>
+                    <a href="../images/yin1.jpg"><img src="../images/yin.jpg"/></a>
+                </div>
+            </div>
+            <div class="fukuan_look_bd">
+                <img src="../images/zhi1.jpg" id="img"/>
+            </div>
+        </div>
+    </div>
+    <script src="../js/comoon.js"></script>
+    <script>
+        var conObj=my$("content").getElementsByTagName("a");
+        for(var i=0;i<conObj.length;i++){
+            conObj[i].onclick=function(){
+                my$("img").src=this.href;
+                return false;
+            };
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w {
+    width: 1200px;
+    /* height: 2100px; */
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #f2f2f2;
+    min-width: 750px;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+input {
+    outline-style: none;
+}
+.clearfix:before,.clearfix:after {
+    content:"" ;
+     display:table;
+ }
+.clearfix:after{
+    clear:both;
+}
+.clearfix {*zoom:1;}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* 头部 */

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>带你去旅行-迪拜6晚7天</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index3.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+</head>
+<body>
+    <div class="xq w">
+        <a name="ding"></a>
+        <!-- 顶部开始 -->
+        <div class="topban">
+            <a href="../travel with you.html">首页</a>
+            &nbsp;&nbsp;>&nbsp;&nbsp;
+            <a href="../index1.html">迪拜</a>
+            &nbsp;&nbsp;>&nbsp;&nbsp;
+            <span>【迪拜6晚7天 极致海陆空】上天入地下海 360°玩转迪拜</span>
+        </div>
+        <!-- 顶部结束 -->
+        <!-- 中间详情开始 -->
+        <div class="xq_travel">
+            <!-- 头部锚点开始 -->
+            <div class="xq_travel_lnav">
+                <ul>
+                    <li>
+                        <a href="#travel_info">旅行信息</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_special">行程亮点</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_route">行程安排</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_fee">费用说明</a>
+                    </li>
+                    <li class="fr">
+                        <span class="spa">￥4900</span><span>起/人</span>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                    window.onload = function () {
+                        let dv = document.querySelector('.xq_travel_lnav');
+                        window.onscroll = function () {
+                            let myscroll=document.documentElement.scrollTop;// 获取滚动条的滚动的距离
+                            let mybody=document.documentElement.clientHeight;//获取浏览器窗口的高度
+                            if(myscroll >= 20){              //判断距离是否到达当前位置
+                                dv.style.position='fixed';            // 添加定位
+                                dv.style.top='0px';
+                                //dv.style.right='100px'
+                            }else if(myscroll <20){        //小于当前位置取消定位
+                                dv.style.position='static';
+
+                            }
+                        }
+                    }
+                </script>
+            <!-- 头部锚点结束 -->
+            <!-- 旅行信息开始 -->
+            <a name="travel_info"></a>
+            <div class="xq_travel_info">
+                <div class="xq_travel_info_l fl">
+                    <div class="travel_info_big">
+                        <img src="images/124层.jpg" id="img"/>
+                    </div>
+                    <div class="info_mask">
+                        <ul id="ul">
+                            <li>
+                                <a href="images/124层.jpg">
+                                    <img src="images/124层小.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/迪拜3大图1.jpg">
+                                    <img src="images/迪拜3小图1.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/迪拜3大图4.jpg">
+                                    <img src="images/迪拜3小图4.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/dubai_xq20.jpeg">
+                                    <img src="images/dubai_xq20_small.jpg"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <script src="../js/comoon.js"></script>
+                        <script>
+                            var aObj=my$("ul").getElementsByTagName("a");
+                            for(var i=0;i<aObj.length;i++){
+                                aObj[i].onclick=function(){
+                                    my$("img").src=this.href;
+                                    return false;
+                                };
+
+                            };
+                        </script>
+                    </div>
+                </div>
+                <div class="xq_travel_info_r fr">
+                    <div class="info_r_comoon">
+                        <dl>
+                            <dt>行程天数</dt>
+                            <dd>7天</dd>
+                        </dl>
+                        <dl class="dl">
+                            <dt>出发地</dt>
+                            <dd>济南</dd>
+                        </dl>
+                        <dl class="dl">
+                            <dt>目的地</dt>
+                            <dd>迪拜 阿布扎比</dd>
+                        </dl>
+                    </div>
+                    <div class="info_r_btn">
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=3337906405&site=qq&menu=yes">我要定制</a>
+                        <a href="index4.html">我要预订</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 旅行信息结束 -->
+            <!-- 行程亮点开始 -->
+            <a name="travel_special"></a>
+            <div class="travel_special">
+                <div class="tralve_special_title">
+                    <h4>
+                        <a href="#">行程亮点</a>
+                    </h4>
+                </div>
+                <div class="travel_special_content" id="travel_special">
+                    <ul>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/黄金市场.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>黄金市场</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>即使您对购买贵金属不感兴趣,也要到黄金市集来领略一下迪拜的珠光宝气。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/124层.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>哈利法塔-124层 </span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>哈利法塔（Burj Khalifa）是当今世界最高建筑.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/迪拜3大图1.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>迪拜喷泉</span>
+                                        <span>开放时间：12:00-21:00</span>
+                                        <p>您看过"水之舞"吗？在迪拜喷泉，这样的机会每天都有。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/夜游迪拜河.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>夜游迪拜河 </span>
+                                        <span>开放时间：00:00-00:00</span>
+                                        <p>迪拜河把迪拜分成DeiraDubai和BurDubai两部分。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/迪拜乐园.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>迪拜乐园 </span>
+                                        <span>开放时间：00:00-00:00</span>
+                                        <p>随着迪拜乐园及度假村的开幕，迪拜华丽变身为欢乐之都。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/迪拜3小图3.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>迪拜 沙漠冲沙 </span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>沙漠冲沙（Desert Safari）能让您深入体验阿拉伯文化。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/沙漠保护区.jpg" alt="沙漠保护区"/>
+                                    <div class="text">
+                                        <span>迪拜沙漠保护区</span>
+                                        <span>开放时间：09:00-22:00</span>
+                                        <p>迪拜沙漠保护区涵盖了迪拜内陆沙漠生态系统225平方公里的面积。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/dubai_xq6.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>法拉利主题公园</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>在场馆内，可以看到法拉利各个时期的跑车、赛车，甚至还有F1车房。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="special_btn" id="special_btn">
+                    <a href="#"><em>更多景点</em><i></i></a>
+                </div>
+                <script src="../js/comoon.js"></script>
+                <script>
+                    var sObj=my$("special_btn");
+                    sObj.onclick=function(){
+                        my$("travel_special").style.height="650px";
+                        return false;
+                    };
+                </script>
+            </div>
+            <!-- 行程亮点结束 -->
+            <!-- 行程安排开始 -->
+            <a name="travel_route"></a>
+            <div class="travel_route clearfix" style="height: 4930px">
+                <div class="travel_route_title">
+                    <h4>
+                        <a href="#">行程安排</a>
+                    </h4>
+                </div>
+                <div class="travel_route_content clearfix" style="height: 4870px">
+                    <div class="route_content_left fl">
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D1</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>济南>迪拜</h4>
+                                    <p>早中晚饭自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/黄金市场.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">黄金市场 </a></h4>
+                                            <p>即使您对购买贵金属不感兴趣，也一定要到黄金市集来领略一下迪拜的珠光宝气。这里是全世界最大的黄金市集，云集了来自迪拜、印度和世界各地的珠宝首饰，大部分为18k和22k金。 。 </p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/124层.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">哈利法塔-124层 </a></h4>
+                                            <p>哈利法塔（Burj Khalifa）是当今世界最高建筑，以828米的绝世高度耸入迪拜云端，是结合了艺术、工程学和传统文化的建筑杰作。这里拥有宽敞恢弘的办公空间、900间私人居所、配备160间客房的Armani酒店。站在位于第 124 层的室外观景台"城市之巅"（At the Top</p>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/迪拜3大图1.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">迪拜喷泉 </a></h4>
+                                            <p>您看过"水之舞"吗？ 在迪拜喷泉(The Dubai Fountains)，这样的机会每天都有。喷泉位于哈利法塔底部的湖面，它拥有全球规模最大的编舞喷泉系统。</p>
+                                            <p>贴士：有音乐听哦!</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/迪拜3大图4.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 夜游迪拜河 </a></h4>
+                                            <p>迪拜河把迪拜分成DeiraDubai和BurDubai两部分，夜晚，华灯初上，随着迪拜特有的木桅船缓缓前行，古老与现代和谐地交织在一起的美丽画卷将在你眼前慢慢展开。</p>
+                                            <p>贴士：这种木制的渡船一次只允许承载20位乘客</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/迪拜乐园.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 迪拜乐园 </a></h4>
+                                            <p>随着迪拜乐园及度假村的开幕，迪拜华丽变身为欢乐之都。电影之门（Motiongate）、宝莱坞乐园（Bollywood Parks）和乐高主题公园（LEGOLAND）等大型主题公园组成了一个扣人心弦的冒险世界，让心态年轻的游客们玩得乐不思蜀，而 Riverland娱乐和餐饮大道则提供高端的。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：搭乘国际航班飞往迪拜，准备开始您的旅程。</p>
+                                    <p>下午：迪拜市区游览，后前往酒店办理入住并休息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D2</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>迪拜>阿布扎比>迪拜</h4>
+                                    <p>早餐-酒店用餐&nbsp;&nbsp;&nbsp;&nbsp;午餐、晚餐- 敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/迪拜3小图3.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 迪拜 沙漠冲沙 </a></h4>
+                                            <p>沙漠冲沙（Desert Safari）能让您深入体验阿拉伯文化，坐上四驱车，在月牙状的沙丘之间风驰电掣。骑骆驼、与猎鹰合照、尝试汉娜纹身、在营地赤足玩沙……若是选择傍晚冲沙，日落西沉后，在耀眼的星河之夜，以传统营火盛宴以及精彩表演，完成这个奇妙旅程。
+</p>
+                                            <!-- <p>贴士：博物馆在周围是米娜巴扎集市，市井气息浓郁，很值得一逛。</p> -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/沙漠保护区.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 迪拜沙漠保护区</a></h4>
+                                            <p>迪拜沙漠保护区涵盖了迪拜内陆沙漠生态系统225平方公里的面积，约占迪拜总土地面积的百分之五。这里的野生动物包括阿拉伯羚羊、沙原羚和山瞪羚。此外，还引进了38种原产于阿拉伯半岛的哺乳动物和爬行动物，包括阿拉伯兔、沙狐、阿拉伯红狐狸和戈登的野生猫。这里也是沙</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq8.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">阿布扎比大清真寺</a></h4>
+                                            <p>阿布扎比大清真寺2007年的古尔邦节竣工，其实这座清真寺的全称为谢赫扎耶德本苏尔坦阿勒纳哈扬清真寺（Sheikh Zayed BinSultan Nahyan Mosque）。是为了纪念这位已故的阿联酋总统谢赫扎伊德·本·苏尔坦而建造的，寺内有他的陵墓</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：早餐后，驱车前往阿布扎比游览（车程约2小时）<p>
+                                    <p>下午：游览结束后返回迪拜。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D3</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>迪拜</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq7.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 酋长皇宫 </a></h4>
+                                            <p>酒店的主体宫殿建筑群长超过1公里。 其主要的花园和周边设施占地100公顷。 酒店共有114个穹顶， 中心穹顶距地面高72.6米。 内部用黄金、 夜明珠及水晶装饰。 宫殿有1002盏水晶吊灯， 最大的重2.5吨。 另一特色是两幅手工织就的宫殿图挂毯， 每一幅重达一公吨。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq10.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">迪拜 沙漠冲沙</a></h4>
+                                            <p>沙漠冲沙（Desert Safari）能让您深入体验阿拉伯文化，坐上四驱车，在月牙状的沙丘之间风驰电掣。骑骆驼、与猎鹰合照、尝试汉娜纹身、在营地赤足玩沙……若是选择傍晚冲沙，日落西沉后，在耀眼的星河之夜，以传统营火盛宴以及精彩表演，完成这个奇妙旅程。 </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：IMG冒险乐园游玩</p>
+                                    <p>下午：前往沙漠冲沙；</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D4</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>迪拜</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/民俗文化村.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">阿布扎比民俗文化村 </a></h4>
+                                            <p>靠防浪堤（Breakwater）、毗邻高大旗杆，这里就是迷人的阿布扎比民俗文化村。 翻新后的民俗村已成为阿联酋的旅游名胜之一。 村中芳草如茵、清泉淙淙，虽然白天比较湿热，但清晨小憩于此，令人心旷神怡</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq6.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self"> 法拉利主题公园 </a></h4>
+                                            <p>随着迪拜乐园及度假村的开幕，迪拜华丽变身为欢乐之都。电影之门（Motiongate）、宝莱坞乐园（Bollywood Parks）和乐高主题公园（LEGOLAND）等大型主题公园组成了一个扣人心弦的冒险世界，让心态年轻的游客们玩得乐不思蜀。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq13.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">棕榈岛亚特兰蒂斯酒店</a></h4>
+                                            <p>棕榈岛上的亚特兰蒂斯酒店（Atlantis the Palm）如同一座童话城堡伫立在阿拉伯湾的碧波之畔，被誉为“六星级酒店”。内部以古巴比伦和失落帝国的装饰风格打造出神秘的氛围，大堂与“失落的空间”水族馆相连，内里有6.5万条鱼，此外，还有一个海豚湾。</p>
+                                            <p>贴士：即使不入住，也推荐在这里的餐厅享受一次自助晚餐，并欣赏独具特色的内部装饰。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq14.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">卓美亚棕榈岛</a></h4>
+                                            <p>迪拜政府耗巨资，在碧波如洗的阿拉伯湾上建造的一系列人工岛屿群，则堪称奢华的典范。从空中俯瞰，朱美拉棕榈岛 (Palm Jumeirah) 形似棕榈树干。它是世界上最大的陆地改造项目之一，号称“世界第八大奇迹”。</p>
+                                            <p>贴士：在棕榈岛上体验直升机之旅或高空跳伞，从上方俯瞰的景色是最震撼的。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq15.jpeg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">棕榈岛轻轨</a></h4>
+                                            <p>要上棕榈岛除了坐船和直升飞机外，最经济实惠的当属棕榈岛观光缆车。虽说名叫缆车，其实是一条只有三站的无人驾驶轻轨，可从迪拜市区直接抵达棕榈岛的亚特兰蒂斯酒店。在观光缆车上可欣赏两侧一望无际的无敌海景。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：迪拜双乐园游玩（宝莱坞+迪拜乐高乐园）；</p>
+                                    <p>下午：前往棕榈岛，乘坐无人驾驶轻轨环游一段棕榈岛，15点后办理亚特兰蒂斯酒店入住并休息；</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D5</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>迪拜</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/水上.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">水上冒险乐园 </a></h4>
+                                            <p>
+水世界冒险乐园（Aquaventure）是迪拜最惊险刺激的水上乐园之一。2013年，水世界冒险乐园新开放了四条更加刺激的滑道——它们都环绕在新建的海神金字塔周围，另外还有一条中东最长的高空滑索环道。当然，您一定不能错过最受游客欢迎的经典项目，如"信仰之跃"（Leap of Faith），从 27.5 米的跳水台纵身一跃，穿越被鲨鱼和鳐鱼环绕的透明隧道。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq17.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">疯狂维迪水上乐园</a></h4>
+                                            <p>疯狂维迪水上乐园（Wild Wadi Waterpark）位于著名的帆船酒店（Burj Al Arab）脚下，园内设有各类刺激的失重项目和冲浪游戏。您可以尽享30多种水上游乐设施和景点带来的无穷乐趣。</p>
+                                            <p>贴士：尽量在开园时进场，可以有效减少排队时间，可以携带自己的毛巾和水。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="images/dubai_xq18.jpg" alt="船帆酒店" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">帆船酒店</a></h4>
+                                            <p>这家“七星级酒店”是现代迪拜的标志性象征。帆船酒店（Burj Al Arab）常被游客票选为世界最奢华酒店。其与众不同的帆船造型已让其成为游客津津乐道的地标之一。</p>
+                                            <p>贴士：如果只想参观酒店而不入住，可以选择预订酒店的早餐或下午茶。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：亚特兰蒂斯酒店自由活动；</p>
+                                    <p>下午：前往朱美拉海滩游玩，前往Wild Wadi Waterpark游玩，后办理帆船酒店入住并休息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D6</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>迪拜>济南</h4>
+                                    <p>早餐、午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>根据航班时间，搭乘飞机飞回国内，结束愉快的行程。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="route_content_right fr"></div>
+                </div>
+            </div>
+            <!-- 行程安排结束 -->
+            <!-- 费用说明开始 -->
+            <a name="travel_fee"></a>
+            <div class="travel_fee">
+                <div class="travel_fee_title">
+                    <h4>
+                        <a href="#">费用说明</a>
+                    </h4>
+                </div>
+                <div class="travel_fee_content">
+                    <div class="fee_content_yes">
+                        <div class="content_yes_title">
+                            <h5>费用包括：</h5>
+                        </div>
+                        <div class="content_yes_content">
+                            <p>1、大交通：机票——往返经济舱机票含机场建设税（机票将统一出票，如遇政府或航空公司政策性调整燃油税费，在未出票的情况下将进行多退少补，敬请谅解。机票一经开出，不得更改、不得签转、不得退票）。</p>
+                            <p>2、当地交通：当地旅游车（保证一人一正座位，车型大小根据游客实际人数安排）。</p>
+                            <p>3、住宿：亚特兰蒂斯酒店或同级双人标准间，帆船酒店或同级双人标准间，芭芭比芭布酒店或同级双人标准间，噜噜啦啦酒店或同级双人标准间，迪拜公园酒店或同级双人标准间，吉隆坡诺夫尔酒店或同级双人标准间，此线路参考酒店为唯一指定入住酒店（遇不可抗力特殊情况除外），此线路酒店无三人间且不能加床。</p>
+                            <p>4、门票：包含迪拜博物馆、法拉利公园、酋长皇宫、阿布扎比清真寺、IMG冒险乐园、乐高主题乐园、宝莱坞乐园、卓美亚棕榈岛、疯狂维迪水上乐园、哈利法塔-124层的门票等等。</p>
+                            <p>5、用餐：含6早18正。</p>
+                            <p>6、旅游顾问：全程专职领队兼境外导游讲解服务。</p>
+                            <p>7、儿童价适用于2至12周岁（不含）的儿童。儿童价费用包含：仅含（往返飞机票，门票，导游费用，车位，用餐）费用，其余一切产生费用敬请自理。</p>
+                            <p>8、其他：含新签马签团队签费用，不含迪拜落地签费用，2-11周岁儿童不占床，12-18周岁必须占床请电询</p>
+                        </div>
+                    </div>
+                    <div class="fee_content_no">
+                        <div class="content_no_title">
+                            <h5>费用不包括：</h5>
+                        </div>
+                        <div class="content_no_content">
+                            <p>1、单人房差：酒店标准房房差 1600元/人。</p>
+                            <p>2、签证/签注：本产品不含个人旅游签证及申请签证中准备相关材料所需的制作、手续费，如所需的公证书、认证费 及其他额外费用，请在指定日期前自行办理好签证并递交我方。</p>
+                            <p>3、关税：出入境个人物品海关征税，超重行李的托运费、保管费。行程中酒店内洗衣、理发、电话、传真、收费电视、饮品、烟酒等个人消费。</p>
+                            <p>4、其他：不含泰国国内办理签及泰国落地签费用9月1日起，每位游客必须支付导游出差费每人每晚100泰铢或者20元人民币，敬请知晓</p>
+                            <p>5、保险：本产品不含旅游人身意外险，我们强烈建议游客购买，游客可在填写订单时勾选附加产品中的相关保险购买。</p>
+                            <p>6、游乐园项目：本产品费用中仅包含游乐场门票的费用，而游乐场内部娱乐项目的费用还需自费。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 费用说明结束 -->
+        </div>
+        <!-- 中间详情结束 -->
+        <div class="ding">
+            <a href="#ding">
+                <i></i>
+                <span>回到顶部</span>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

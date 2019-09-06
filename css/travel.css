@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:auto;padding:0}
+body{margin:auto;padding:0;min-width:1200px;;min-height:2100px;background-color: #f2f2f2;}
+.w {
+    height: 2280px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+#bg_1{width:1200px;height:745px;}
+#menu{background:url(images/travel_bg.jpg);width:1200px;height:726px;position:absolute;}
+a{text-decoration:none}
+li{list-style:none}
+.login{position:relative;bottom:25px;right:150px;}
+.login a{font-size:14px;}
+.top-right{position:relative;bottom:25px;left:170px;}
+.top-right a{font-size:14px;}
+.top{width:100%;height:30px;position:absolute;}
+.bg{ background:#CCC;filter:alpha(opacity=50);opacity:0.5;}
+.top li{float:left;padding-left:67px;font-size:18px;color:#000;}
+.top li a{color:#000;}
+.top-right{padding-left:650px;}
+.left_1 img{width:250px;height:12s6px;line-height:90px;position:relative;top:40px;left:50px}
+.nav{position:absolute;top:25px;right:190px}
+.dingwei{width:20px;height:20px}
+.dingdan{width:20px;height:20px}
+#menu_solid{position:relative;bottom:567px;left:90px;width:280px;height:900px;}
+.hot{width:80px;}
+.nav_2{display:none;width:200px;position:relative;left:10px;bottom:10px}
+.nav_1 li:hover ul{display:block;}
+.option{background:#FFF;position:relative;right:60px;padding-left:80px}
+.input{width:320px;height:40px;border:1px #33B74A solid;}
+.btn{width:50px;height:42px;position:relative;top:14px;right:5px;background:url(../images/btn.png);border:1px #33B74A solid;}
+#sousuo{position:relative;left:450px;top:70px;}
+.Asia{width:200px;height:100px;position:relative;right:60px;background:#FFF;}
+.option1 a i{font-family:"icomoon";font-style:normal;color:#33B74A;}
+.option2 a i{font-family:"icomoon";font-style:normal;color:#33B74A;}
+.option i{font-family:"icomoon";font-style:normal;color:#33B74A;}
+.option a{color:#333}
+.Asia li{width:50px;float:left;line-height:30px;font-size:14px;}
+.Asia li a{color:#666}
+.Asia li a:hover{color:#33B74A}
+.Europe{width:200px;height:160px;position:relative;right:60px;background:#FFF;}
+.Europe li{width:50px;float:left;line-height:30px;font-size:14px;}
+.Europe li a{color:#666}
+.Europe li a:hover{color:#33B74A}
+.American{width:200px;height:160px;position:relative;right:60px;background:#FFF;}
+.American li{width:50px;float:left;line-height:30px;font-size:14px;}
+.American li a{color:#666}
+.American li a:hover{color:#33B74A}
+.more{position:relative;top:40px;right:10px;width:30px;height:30px;background:#0CC}
+#img_center{width:250px;height:100px;background:#0C9;position:absolute;top:815px;right:505px;}
+#travel_with{width:1200px;height:187px;position:absolute;top:915px;}
+#travel_with li{width:296px;height:187px;float:left;margin:0 2px}
+.img:hover{transform:translate(-12px,0)}
+.img{transition:all 1s ease-out}
+.commend_place{height:50px;position:relative;bottom:535px;line-height:30px;}
+.commend_place a {
+    color: #747474;
+}
+.solid{position:relative;top:90px;height:3px;background:#33B74A}
+.nav_3{width:900px;height:60px;position:relative;top:120px;left:330px}
+.nav_3 li{width:150px;float:left}
+.nav_3 li a{color:#666}
+.nav_3 li a:hover{color:#33B74A}
+.hot_place{width:1200px;height:225px;position:relative;bottom:550px}
+.hot_place li{width:396px;height:225px;float:left;margin:0 2px}
+.hot_place1{position:relative;right:50px;bottom:5px}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+i{font-family:”icomoon“;}
+.A{position:absolute;}
+.bg1{ background:#CCC;filter:alpha(opacity=50);opacity:0.5;}
+#question1{width:1200px;height:320px;position:relative;bottom:551px;background-color: #f2f2f2;}
+.question2{position:relative;top:30px;width:1200px;height:260px;background-color: #fff;padding: 0 10px;}
+.question2 li a{font-size:14px}
+.question2 li a{line-height:40px}
+.Mo{position:relative;left:225px;color:#33B74A;font-weight:bold;font-size:16px}
+.question2 ul{width:400px;float:left}
+.travel_ask{color:#000;font-size:16px;font-weight:bold}
+.question2 li a{color:#666}
+.question2 li a:hover{color:#33B74A}
+.bottom_green{width:1200px;height:100px;background:#33B74A;position:relative;bottom:420px}
+.bottom_green li{width:240px;float:left;height:100px;line-height:80px;text-align:center;position:relative;bottom:50px}
+.commend_i a i{font-family:"icomoon";font-style:normal;color:#fff;font-size:24px}
+.commend_i a{color:#fff;font-size:22px;font-weight:400}
+.DH1 a i{font-family:"icomoon";font-style:normal;color:#33B74A;font-size:36px;position:relative;left:20px}
+.DH2 a i{font-family:"icomoon";font-style:normal;color:#33B74A;font-size:36px;position:relative;left:20px}
+.DH3 a i{font-family:"icomoon";font-style:normal;color:#33B74A;font-size:36px;position:relative;left:20px}
+.DH4 a i{font-family:"icomoon";font-style:normal;color:#33B74A;font-size:36px}
+.list{font-size:20px}
+.daohang{width:1200px;position:relative;bottom:520px;padding-left:30px}
+.list{color:#33B74A}
+.daohang li a{color:#999}
+.daohang ul{width:171px;float:left}
+.black_bottom{width:1200px;height:320px;background:#2B2B2B;position:relative;bottom:420px}
+.black_left{width:800px;height:300px}
+.black_left ul{width:160px;height:300px;float:left;padding-left:40px;overflow:hidden}
+.black_left ul li{line-height:30px}
+.c a{color:#999;font-size:13px}
+.c1 a{font-size:16px;color:#CCC}
+.center_bottom{height:120px;border-left:1px #999 dashed;border-right:0px;border-top:0px;border-bottom:0px;position:relative;bottom:240px}
+.i_final a i{font-family:"icomoon";font-style:normal;color:#33B74A;font-size:18px}
+.i_final a{color:#999;font-size:14px}
+.black_right{position:relative;bottom:350px;left:880px}
+.black_right li{line-height:30px}
+.hr_bottom{width:1200px;position:relative;bottom:570px;border-bottom:1px #999 dashed;border-top:0px;border-left:0px;border-right:0px}
+.black_bottom2{position:relative;bottom:540px;left:300px}
+.black_bottom2 li{color:#999;font-size:14px;line-height:30px}

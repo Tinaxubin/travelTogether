@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>带你去旅行-订单信息</title>
+    <link rel="stylesheet" href="http://s3.lvjs.com.cn/min/index.php?f=/styles/v4/modules/calendar.css,/styles/v3/core.css,/styles/v5/modules/arrow.css,/styles/v4/modules/buttons.css,/styles/v4/modules/bank.css,/styles/v4/modules/dialog.css,/styles/v5/modules/form.css,/styles/v4/modules/selectbox.css,/styles/v4/modules/step.css,/styles/v4/modules/tables.css,/styles/v5/modules/paging.css,/styles/v4/order-common.css,/styles/v4/pa-base.css,/styles/v4/order.css,/styles/v5/modules/tip.css,/styles/v5/modules/tags.css,/styles/new_v/header-air.css,/styles/common/poplogin.css"/>
+    <!-- <link rel="stylesheet" href="http://s1.lvjs.com.cn/styles/v6/order.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index4.css">
+</head>
+<body class="order fx_xfJsLine">
+    <!-- 后台不需要此模块 -->
+<div class="main_box w">
+    <div class="wrap">
+        <!-- 操作步骤 -->
+        <ol class="ui-step ui-step-3">
+            <li>
+                <a href="../index2.html" class="ui-step-text">巴厘岛</a>
+                <span class="ui-step-text">></span>
+                <a href="index3_3.html" class="ui-step-text">【巴厘岛4晚6天】一次走进巴厘岛人的旅行</a>
+                <span class="ui-step-text">></span>
+                <span class="ui-step-text">填写订单信息</span>
+            </li>
+        </ol>
+        <!-- 操作步骤 -->
+        <div class="order_box border_3 position_r clearfix">
+            <div class="fx_pin-wrapper">
+                <div class="fx_right_priceBox" style="position: absolute;">
+                    <div id="o_price" class="fx_right_gjBox">
+                        <b>总计：</b>
+                        <span class="span1">￥</span><span id="zong">5100</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="order_name">
+                <span>【巴厘岛4晚6天】一次走进巴厘岛人的旅行</span>
+            </h1>
+            <!--线路名称 -->
+            <dl class="order_dl">
+                <dt>线路名称：</dt>
+                <dd>
+                    <span>
+                    【巴厘岛4晚6天】一次走进巴厘岛人的旅行
+                    </span>
+                </dd>
+            </dl>
+            <form id="fillForm" name="fillForm" action="/tnt_order/sale/route/fill" method="post">
+                <!--成人数-->
+                <dl class="order_dl">
+                <dt>成人数：</dt>
+                <dd>
+                    <div class="fx_fs_tjBox">
+                        <span class="num_box">
+                        <a href="#" id="sum1">+</a>
+                        <input type="text" id="adult-count" name="adultCount" minquantity="1" maxquantity="10" value="1" class="input num_text adultCount" style="text-indent: 1em;"/>
+                        <a href="#" id="jian1">-</a>
+                        </span>
+                    </div>
+                    <p class="fx_fs_tjPric"><span>￥</span><span id="spc1">3900</span></p>
+                </dd>
+                </dl>
+                <!--儿童数，儿童数默认为0-->
+                <dl class="order_dl">
+                <dt> 儿童数：</dt>
+                <dd>
+                    <div class="fx_fs_tjBox">
+                        <span class="num_box">
+                        <a href="#" id="sum2">+</a>
+                        <input type="text" id="children-count" name="childrenCount" minquantity="0" maxquantity="10"     value="0" class="input num_text childrenCount" style="text-indent: 1em;"/>
+                        <a href="#" id="jian2">-</a>
+                        </span>
+                    </div>
+                    <p class="fx_fs_tjPric"><span>￥</span><span id="spc2">0</span></p>
+                </dd>
+                </dl>
+                <!--房间数-->
+                <dl class="order_dl">
+                <dt> 房间数：</dt>
+                <dd class="fx_fjs">
+                    <div class="fx_fs_tjBox">
+                        <span class="num_box">
+                        <a href="#" id="sum3">+</a>
+                        <input type="text" id="room-count" name="roomCount" minquantity="1" maxquantity="500" value="1" class="input num_text" style="text-indent: 1em;"/>
+                        <a href="#" id="jian3">-</a>
+                        </span>
+                        <input type="hidden" id ="adultShareRoom" name="shareRoom" value="false">
+                        <p class="fx_fs_tjPric" style="margin-left: 20px;"><span>￥</span><span id="spc3">1200</span></p>
+                        <p class="fx_fs_fjsum" style="margin-left: 20px">（可入住人数：2人）</p>
+                    </div>
+                </dd>
+                </dl>
+
+
+            </form>
+        </div>
+
+        <!--包含商品 -->
+        <form method="POST" name="orderForm" id="order_submit">
+            <div class="order_box">
+                <!--联系人信息-->
+                <h3 class="order_tit border_b2">联系人信息</h3>
+                <div class="user_info no_bd">
+                <div id="buyer" class="user_info no_bd js_copy_info">
+                    <h5 class="youwan_tit">购买人</h5>
+                    <dl class="user_dl">
+                        <dt><span class="red">*</span>姓名：</dt>
+                        <dd>
+                            <input class="input js_yz" type_name="text" type="text" name="contact.fullName" placeholder="姓名" id="contactFullName">
+                            <span class="error_text"><i class="tip-icon tip-icon-error"></i>请输入姓名</span>
+                        </dd>
+                    </dl>
+                    <dl class="user_dl">
+                        <dt><span class="red">*</span>手机号码：</dt>
+                        <dd>
+                            <input class="input js_yz js_textBig" id="contactMobile" item_type="mobile" type    _name="mobile" name="contact.mobile" maxlength="11" type="text" placeholder="输入手机号码">
+                        </dd>
+                    </dl>
+                    <dl class="user_dl">
+                        <dt><span class="red">*</span>邮箱地址：</dt>
+                        <dd>
+                            <input class="input js_yz" type_name="email" type="text" name="contact.email" placeholder="邮箱">
+                        </dd>
+                    </dl>
+                </div>
+                </div>
+                <!--游玩人信息-->
+                <div id="userinfoDiv"></div>
+                <h3 class="order_tit">用户信息</h3>
+                <div id="Jtenantlist">
+                    <div class="user_info no_bd">
+                        <input type="hidden" id="travellersId0" name="travellers[0].receiverId" value=""    autocomplete="off" />
+                        <dl class="user_dl">
+                            <dt>
+                                <span class="red">*</span>姓名：
+                            </dt>
+                            <dd>
+                                <input class="input js_yz" id="fullName0" travellersId=""
+                                type_name="text" name="travellers[0].fullName" type="text"
+                                placeholder="姓名">
+                                <span class="btn cbtn-default js_btn_copy">复制购买人信息</span>
+                                <span class="error_text"><i
+                                class="tip-icon tip-icon-error"></i>请输入姓名</span>
+                            </dd>
+                            </dl>
+                        <dl class="user_dl">
+                        <dt>
+                            <span class="red">*</span>人群：
+                        </dt>
+                        <dd>
+                            <select class="select" id="peopleType0"
+                                name="travellers[0].peopleType">
+                                <option value="PEOPLE_TYPE_ADULT">成人</option>
+                                <option value="PEOPLE_TYPE_CHILD">儿童</option>
+                            </select>
+                        </dd>
+                        </dl>
+                        <dl class="user_dl">
+                        <dt>
+                            <span class="red">*</span>手机号码：
+                        </dt>
+                        <dd>
+                            <input class="input js_yz" id="mobile0"
+                                type_name="mobile" name="travellers[0].mobile"
+                                maxlength="11" type="text" placeholder="手机号码">
+                            <span
+                                class="ts_text" style="font-size:14px">此手机号为接收短信所用，作为订购与取票凭证，请准确填写。</span>
+                        </dd>
+                        </dl>
+                        <dl class="user_dl">
+                       <dt><span class="red">*</span>证件类型：</dt>
+                       <dd>
+                           <select class="select" id="idType0" num="0" name="travellers[0].idType">
+                                <option value="ID_CARD">身份证</option>
+                                <option value="HUZHAO">护照</option>
+                                <option value="TAIBAO">台湾通行证</option>
+                                <option value="GANGAO">港澳通行证</option>
+                           </select>
+                           <input class="input js_yz" type_name="shenfenzheng" id="idNo0" name="travellers[0].idNo" type="text" placeholder="证件号码">
+                           <span class="ts_text" style="font-size:14px">取票时需出示身份证确认。</span>
+                       </dd>
+                        </dl>
+                        <dl class="user_dl xb_check" id="xingbieDl0" number_index="0" style="display:none;">
+                        <dt><span class="red">*</span>性别：</dt>
+                        <dd>
+                        <label class="check"><input class="radio" name="travellers[0].gender" value='MAN' checked="" type="radio">男</label>
+                        <label class="check"><input class="radio" name="travellers[0].gender" value='WOMAN' type="radio">女</label>
+                        </dd>
+                        </dl>
+                        <dl class="user_dl" id="birthdayDl0" number_index="0" style="display:none;">
+                        <dt><span class="red">*</span>出生日期：</dt>
+                        <dd>
+                            <input class="input js_birthday js_yz" type_name="text" name="travellers[0].birthday" type="text" onFocus="WdatePicker({readOnly:true})" placeholder="yyyy-mm-dd">
+                            <span class="error_text"><i class="tip-icon tip-icon-error"></i>请选择出生日期</span>
+                        </dd>
+                        </dl>
+                        <dl class="user_dl bx_check">
+                        <dt>&nbsp;</dt>
+                        <dd>
+                            <span class="error_text"></span>
+                            <input class="yw_bx_class" name="" value="0" type="hidden">
+                            <input class="qx_bx_class" name="" value="0" type="hidden">
+                        </dd>
+                        </dl>
+                        <h5 class="youwan_tit">游玩人1</h5>
+                    </div>
+                </div>
+                <!--配送方式-->
+            </div>
+            <div class="fk_box_fixed mt_20">
+                <div class="fk_box" style="position: fixed;width: 820px;">
+                    <a href="index7.html" class="btn_fk" hidefocus="false" id="degree"> 同意以下协议，去付款 </a>
+                    <div class="fk_l">
+                        <div id="orderPriceDiv" class="fk_jg">
+                            <p class="fk_p1" style="margin-top: 10px;">
+                                应付总价:<span>¥</span><span id="zongjin">5100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+         <script src="../js/comoon.js"></script>
+        <script>
+            my$("sum1").onclick=function(){
+                var num=parseInt(my$("adult-count").value);
+                var inn1=0;
+                num=num+1;
+                inn1=3900*num;
+                my$("adult-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc2").innerText);
+                var haha4=parseInt(my$("spc3").innerText);
+                my$("spc1").innerText=3900*num;
+                haha1=inn1+haha3+haha4;
+                my$("zong").innerText=haha1;
+                my$("zongjin").innerText=haha1;
+                return false;
+            };
+            my$("jian1").onclick=function(){
+                var num=parseInt(my$("adult-count").value);
+                var inn2=0;
+                num-=1;
+                inn2=3900*num;
+                my$("adult-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc2").innerText);
+                var haha4=parseInt(my$("spc3").innerText);
+                my$("spc1").innerText=3900*num;
+                haha1=inn2+haha3+haha4;
+                my$("zong").innerText=haha1;
+                my$("zongjin").innerText=haha1;
+                return false;
+            };
+            my$("sum2").onclick=function(){
+                var num=parseInt(my$("children-count").value);
+                var inn3=0;
+                num+=1;
+                inn3=3000*num;
+                my$("children-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc1").innerText);
+                var haha4=parseInt(my$("spc3").innerText);
+                my$("spc2").innerText=3000*num;
+                haha1=inn3+haha3+haha4;
+                my$("zong").innerText=haha1;
+                my$("zongjin").innerText=haha1;
+                return false;
+            };
+            my$("jian2").onclick=function(){
+                var num=parseInt(my$("children-count").value);
+                    num-=1;
+                my$("children-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc1").innerText);
+                var haha4=parseInt(my$("spc3").innerText);
+                var inn4=0;
+                inn4=3000*num;
+                my$("spc2").innerText=3000*num;
+                haha1=inn4+haha3+haha4;
+                my$("zongjin").innerText=haha1;
+                my$("zong").innerText=haha1;
+                return false;
+            };
+            my$("sum3").onclick=function(){
+                var num=parseInt(my$("room-count").value);
+                    num+=1;
+                my$("spc3").innerText=1200*num;
+                my$("room-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc1").innerText);
+                var haha4=parseInt(my$("spc2").innerText);
+                var inn5=0;
+                inn5=1200*num;
+
+                haha1=inn5+haha3+haha4;
+                my$("zongjin").innerText=haha1;
+                my$("zong").innerText=haha1;
+                return false;
+            };
+            my$("jian3").onclick=function(){
+                var num=parseInt(my$("room-count").value);
+                    num-=1;
+                my$("room-count").value=num;
+                var haha1=parseInt(my$("zong").innerText);
+                var haha3=parseInt(my$("spc1").innerText);
+                var haha4=parseInt(my$("spc2").innerText);
+                var inn6=0;
+                inn6=1200*num;
+                my$("spc3").innerText=1200*num;
+                haha1=inn6+haha3+haha4;
+                my$("zongjin").innerText=haha1;
+                my$("zong").innerText=haha1;
+                return false;
+            };
+        </script>
+        <div class="order_box h">
+            <div class="lv-agree" style="font-size:14px;color:#747474;">
+                <h2>【巴厘岛4晚6天】一次走进巴厘岛人的旅行</h2>
+                <span>费用包含：</span><br/>1、大交通：机票——往返团队经济舱机票含机场建设税（机票将统一出票，如遇政府或航空公    司政策性调整燃油税费，在未出票的情况下将进行多退少补，敬请谅解。团队机票一经开出，不得更改、不得签转  、不得退票）。<br/>
+                2、当地交通：当地旅游车（保证一人一正座位，车型大小根据游客实际人数安排）。<br/>3、住宿：亚特兰蒂斯酒店或同级双人标准间，帆船酒店或同级双人标准间，芭芭比芭布酒店或同级双人标准间，噜噜啦啦酒店或同级双人标准间，迪拜公园酒店或同级双人标准间，吉隆坡诺夫尔酒店或同级双人标准间，此线路参    考酒店为唯一指定入住酒店（遇不可抗力特殊情况除外），此线路酒店无三人间且不能加床。<br/>4、门票：包含迪拜博物馆、法拉利公园、酋长皇宫、阿布扎比清真寺、IMG冒险乐园、乐高主题乐园、宝莱坞乐园、卓美亚棕榈岛、疯狂维迪水上乐园、哈利法塔-124层的门票等等。<br/>
+                5、用餐：仅早餐。<br/>
+                6、旅游顾问：全程专职领队兼境外导游讲解服务。<br/>7、儿童价适用于2至12周岁（不含）的儿童。儿童价费用 包含：仅含（往返飞机票，门票，车位，用餐）费用，其余一切产生费用敬请自理。<br/>  9、其他：含新签马签团队签费用，不含巴厘岛落地签费用，2-11周岁儿童不占床，12-18周岁必须占床请电询<br/>
+                <span>费用不包含：</span><br/>
+                1、单人房差：酒店标准房房差 1600元/人。<br/>2、签证   签注：本产品不含个人旅游签证及申请签证中准备相关材料所需的制作、手续费，如所需的公证书、认证费     及其他额外费用，请在指定日期前自行办理好签证并递交我方。<br/>3、关税：出入境个人物品海关征税，超重行   李的托运费、保管费。行程中酒店内洗衣、理发、电话、传真、收费电视、饮品、烟酒等个人消费。<br/>4、其他  ：不含泰国国内办理签及泰国落地签费用9月1日起，每位游客必须支付导游出差费每人每晚100泰铢或者20元人民 币，敬请知晓<br/>
+                5、保险：本产品不含旅游人身意外险，我们强烈建议游客购买<br/> 6、游乐园项目费用：本产品费用中仅包含游乐场门票的费用，而游乐场内部娱乐项目的费用还需自费。<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

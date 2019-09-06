@@ -1,0 +1,467 @@
+/*
+* @Author: Marte
+* @Date:   2018-12-06 14:12:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-12-25 23:14:20
+*/
+.xq {
+    /* height: 1500px; */
+}
+/* 顶部开始 */
+.topban {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.topban a {
+    height: 50px;
+    display: inline-block;
+    color: #747474;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.topban span {
+    font-size: 16px;
+    display: inline-block;
+}
+a:hover {
+    color: #c3d825;
+}
+/* 顶部结束 */
+/* 中间详情开始 */
+.xq_travel {
+    width: 100%;
+    /* height: 900px; */
+}
+/* 头部锚点开始 */
+.xq_travel .xq_travel_lnav {
+    width: 1200px;
+    height: 59px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    /* top: 0; */
+    z-index: 2;
+}
+.xq_travel_lnav ul {
+    height: 60px;
+}
+.xq_travel_lnav li {
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+    float: left;
+    color: #747474;
+}
+.xq_travel_lnav .fr {
+    float: right;
+    margin-right: 30px;
+}
+.xq_travel_lnav .spa {
+    color: orange;
+}
+.xq_travel_lnav li a {
+    color: #747474;
+}
+.xq_travel_lnav li a:hover {
+    color: #c3d825;
+}
+/* 头部锚点结束 */
+/* 旅行信息开始 */
+.xq_travel_info {
+    height: 460px;
+    background-color: #fff;
+}
+.xq_travel_info_l {
+    width: 660px;
+    height: 460px;
+    position: relative;
+}
+.travel_info_big {
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+}
+.xq_travel_info_l .info_mask {
+    width: 600px;
+    height: 90px;
+    padding: 10px 0px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background: rgba(0,0,0,0.5);
+}
+.info_mask ul {
+    height: 100px;
+    padding: 0px 10px;
+}
+.info_mask ul li {
+    height: 90px;
+    width: 120px;
+    float: left;
+    margin-left: 20px;
+}
+.xq_travel_info_r {
+    width: 480px;
+    height: 400px;
+    padding: 30px;
+}
+.info_r_comoon {
+    width: 480px;
+    height: 240px;
+}
+.info_r_comoon dl {
+    height: 60px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+.dl {
+    background-color: #f7f7f7;
+}
+.info_r_comoon dt {
+    margin-right: 30px;
+}
+.info_r_comoon dt,dd {
+    float: left;
+}
+.info_r_btn {
+    width: 480px;
+    height: 50px;
+    margin-top: 30px;
+}
+.info_r_btn a {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color: #c3d825;
+    float: right;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+.info_r_btn a:hover {
+    color: #fff;
+    background-color: #33B74A;
+}
+/* 旅行信息结束 */
+/* 行程亮点开始*/
+.travel_special {
+    /* height: 800px; */
+}
+.tralve_special_title {
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+.tralve_special_title a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #747474;
+}
+.travel_special_content {
+    height: 325px;
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+.travel_special_content li {
+    width: 280px;
+    height: 320px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* box-shadow:0 15px 30px rgba(0,0,0,0.1); */
+}
+.special_content_list {
+    height: 320px;
+    width: 280px;
+}
+.special_content_list a {
+    width: 280px;
+    height: 325px;
+    display: block;
+    color: #747474;
+}
+.special_content_list img {
+    width: 100%;
+    height: 200px;
+}
+.special_content_list span {
+    height: 25px;
+    width: 280px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #747474;
+    display: block;
+}
+.special_content_list p {
+    /* height: 70px; */
+    line-height: 25px;
+    text-indent: 1em;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.special_btn {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+.special_btn a {
+    background-color: #c3d825;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+}
+.special_btn a em {
+    font-style: normal;
+    position: absolute;
+    top: 16px;
+    left: 5px;
+}
+.special_btn a i {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    font-weight: 400;
+    top: 5px;
+    right: 0px;
+}
+/* 行程亮点结束*/
+/* 行程安排开始 */
+.travel_route {
+    height: 5550px;
+}
+.travel_route_title {
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+.travel_route_title a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #747474;
+}
+.travel_route_content {
+    height: 5490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.route_content_left {
+    width: 1000px;
+    height: 5490px;
+    /* background-color: pink; */
+}
+.content_left_day {
+    /* height: 400px; */
+    /* background-color: #ccc; */
+}
+.content_left_day .day_start {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.day_start .day_start_l {
+    width: 120px;
+    height: 100px;
+}
+.day_start_l h1 {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    color: #78c32b;
+}
+.day_start_r {
+    padding: 30px 30px 10px;
+}
+.day_start_r h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.day_start_r p {
+    color: #747474;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.day_middle li {
+    height: 200px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: skyblue; */
+}
+.day_middle_l {
+    width: 120px;
+    height: 120px;
+    padding: 40px 0;
+}
+.day_middle_l i {
+    font-family: "icomoon";
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    width: 120px;
+    height: 120px;
+    display: block;
+    line-height: 120px;
+    text-align: center;
+    color: #c3d825;
+}
+.day_middle_m {
+    width: 200px;
+    height: 120px;
+    padding: 40px 0;
+
+}
+.day_middle_r {
+    width: 660px;
+    height: 170px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.day_middle_r h4 {
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    color: #3eb166;
+}
+.day_middle_r h4 a {
+    color: #00947a;
+}
+.day_middle_r p {
+    color: #747474;
+    text-indent: 1em;
+    font-size: 16px;
+    line-height: 30px;
+}
+.day_end {
+    height: 109px;
+    border-bottom: 1px solid #ccc;
+}
+.day_end .day_end_l {
+    width: 120px;
+    height: 100px;
+}
+.day_end_l span {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    display: block;
+}
+.day_end_l span i {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 50px;
+    color: #c3d825;
+}
+.day_end_r {
+    padding: 20px 30px 10px;
+}
+.day_end_r h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.day_end_r p {
+    color: #747474;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.route_content_right {
+    width: 200px;
+    /* height: 880px; */
+    background-color: purple;
+}
+/* 行程安排结束 */
+/* 费用说明开始 */
+.travel_fee {
+    height: 600px;
+}
+.travel_fee_title {
+    height: 60px;
+    line-height: 60px;
+}
+.travel_fee_title a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #747474;
+}
+.travel_fee_content {
+    height: 540px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+.fee_content_yes {
+    height: 300px;
+}
+.content_yes_title {
+    height: 40px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.content_yes_content {
+    height: 240px;
+    margin: 10px 20px;
+}
+.content_yes_content p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #747474;
+}
+.fee_content_no {
+    height: 220px;
+}
+.content_no_title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.content_no_content {
+    height: 150px;
+    margin: 10px 20px;
+}
+.content_no_content p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #747474;
+}
+/* 费用说明结束 */
+/* 中间详情结束 */
+.ding {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+}
+.ding a {
+    width: 80px;
+    height: 80px;
+    display: block;
+    color: #747474;
+}
+.ding a i {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 60px;
+    margin-left: 8px;
+    margin-top: 0px;
+}
+.ding a span {
+    height: 20px;
+    display: block;
+    text-align: center;
+    margin-top: -20px;
+}

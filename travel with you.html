@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>带你去旅行-首页</title>
+<link rel="stylesheet" href="css/travel.css" type="text/css" />
+<style type="text/css">
+ *{ padding:0; margin:0; list-style:none; }
+ .all{ width:1200px;height:600px;margin:auto;overflow:hidden;position:relative;top:91px;float:right}
+ .screen{width:1200px;height:600px;position:relative;overflow:hidden; }
+ .screen li{ width:1200px; height:600px;float:left;}
+ .screen ul{ position:absolute; left:0; top:0px; width:4000px;}
+ .all ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+ .all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:10px; cursor:pointer;}        .all ol li.current{ background:yellow;}
+ #arr {display: none;}
+ #arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer;     line-height:40px; text-align:center; font-weight:bold; font-family:'黑体'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+ #arr #right{right:5px; left:auto;}
+ </style>
+<script>
+  window.onload = function () {
+	var screen = document.getElementById("screen");
+	var ul = screen.children[0];
+	var ol = screen.children[1];
+	var div = screen.children[2];
+	var tempLi = ul.children[0].cloneNode(true);ul.appendChild(tempLi);
+	var imgWidth = screen.offsetWidth;
+	for(var i = 0; i < ul.children.length - 1; i++) {
+	var newOlLi = document.createElement("li");
+	 newOlLi.innerHTML = i + 1;
+	 ol.appendChild(newOlLi);
+	 }
+	 var olLiArr = ol.children;
+	 olLiArr[0].className = "current";
+    for(var i = 0, len = olLiArr.length; i < len; i++) {
+   olLiArr[i].index = i;
+   olLiArr[i].onmouseover = function (ev) {
+  for(var j = 0; j < len; j++) {
+  olLiArr[j].className = "";
+}
+  this.className = "current";
+key = square = this.index;
+animate(ul, -this.index * imgWidth);
+}
+}
+var key = 0;
+var square = 0;
+var timer = setInterval(autoPlay, 4000);
+screen.onmouseover = function (ev) {
+clearInterval(timer);
+div.style.display = "block";
+}
+ screen.onmouseout = function (ev) {
+ timer = setInterval(autoPlay, 4000);
+ div.style.display = "none";
+ }
+var divArr = div.children;
+divArr[0].onclick = function (ev) {
+key--;
+if(key < 0) {
+ ul.style.left = -(ul.children.length-1) * imgWidth + "px";
+ key = 1;
+  }
+   animate(ul, -key * imgWidth);
+   square--;
+   if(square < 0) {
+   square = 1;
+   }
+   for(var k = 0; k < len; k++) {
+   olLiArr[k].className = "";
+    }
+	olLiArr[square].className = "current";
+	 }
+	 divArr[1].onclick = autoPlay;
+	 function autoPlay() {
+	 key++;
+	 if(key > ul.children.length - 1) {
+	 ul.style.left = 0;
+	  key = 1;
+	  }
+	  animate(ul, -key * imgWidth); square++;
+	  if(square > 1) {
+	  square = 0;
+	  }
+	  for(var k = 0; k < len; k++) {
+	  olLiArr[k].className = "";
+	   }
+	    olLiArr[square].className = "current";
+		 }
+		 function animate(ele,target){
+		  clearInterval(ele.timer);
+		  var speed = target>ele.offsetLeft?10:-10;
+		  ele.timer = setInterval(function () {
+		   var val = target - ele.offsetLeft;
+		    ele.style.left = ele.offsetLeft + speed + "px";
+			  if(Math.abs(val)<Math.abs(speed)){
+			   ele.style.left = target + "px";
+		 clearInterval(ele.timer);
+		 }
+		 },10)
+		 }
+		 }
+        </script>
+</head>
+
+<body>
+<div class="w">
+<div id="bg_1"><!--轮播图及以上的-->
+<div id="menu"><!--首页导航栏-->
+<li class="top bg"></li>
+<div class="top">
+<ul class="left_1"><img src="images/logo.jpg"/></ul>
+<ul class="nav">
+<li class="login"><a href="login.html" style="color:#666">登录</a><a href="zhuce.html" style="color:#666">&nbsp;&nbsp;|&nbsp;&nbsp;注册</a></li>
+<ul class="top-right">
+<li><a href="#" style="color:#666;">设为首页&nbsp;&nbsp;|&nbsp;&nbsp;加入收藏&nbsp;&nbsp;|&nbsp;&nbsp;手机站 </a></li>
+</ul>
+</ul>
+</ul>
+</div>
+</div>
+<div id="sousuo">
+   <form action="" method="post">
+      <input type="text" name="search" placeholder="请输入"  class="input"/>
+        <input type="button" name="btn" value="" class="btn"/>
+   </form>
+   </div>
+   <div class="nav_3">
+   <li><a href="#">首页</a></li>
+   <li class="option1"><a href="http://wpa.qq.com/msgrd?v=3&uin=3337906405&site=qq&menu=yes"><i></i>定制旅游</a></li>
+   <li><a href="Noname1.html">旅游论坛</a></li>
+   <li class="option2"><a href="second/index6.html"><i></i>我的订单</a></li>
+   <li><a href="#">旅游指南</a></li>
+   <li><a href="#">关于我们</a></li>
+   </div>
+    <hr  class="solid"/>
+<div class="all" id="all">
+          <div class="screen" id="screen">
+          <ul id="ul">
+          <li><img src="images/1.jpg" width="1200" height="600" /></li>
+          <li><img src="images/2.jpg" width="1200" height="600" /></li>
+              </ul>
+               <ol>
+               </ol>
+                <div id="arr">
+                <span id="left"><</span>
+                 <span id="right">></span>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+
+ <div id="menu_solid">
+   <ul class="nav_1">
+     <li class="hot"><img src="images/hot_place1.jpg" class="hot_place1" width="200" height="37"/>
+        <ul class="nav_2">
+          <li class="option"><a href="#"><i></i>亚洲</a></li>
+          <ul class="Asia">
+                <li><a href="#">泰国</a></li>
+                <li><a href="index1.html">迪拜</a></li>
+                <li><a href="#">越南</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">不丹</a></li>
+                <li><a href="#">柬埔寨</a></li>
+                <li><a href="#">缅甸</a></li>
+                <li><a href="#">伊朗</a></li>
+                <li class="li"><a href="#">土耳其</a></li>
+                <li class="li"><a href="#">尼泊尔</a></li>
+                <li class="li"><a href="#">老挝</a></li>
+
+           </ul>
+          <li class="option"><a href="#"><i></i>欧洲</a></li>
+          <ul class="Europe">
+                <li><a href="#">法国</a></li>
+                <li><a href="#">英国</a></li>
+                <li><a href="#">瑞士</a></li>
+                <li><a href="#">荷兰</a></li>
+                <li><a href="#">德国</a></li>
+                <li><a href="#">希腊</a></li>
+                <li><a href="#">意大利</a></li>
+                <li><a href="#">西班牙</a></li>
+                <li><a href="#">葡萄牙</a></li>
+                <li><a href="#">捷克</a></li>
+                <li><a href="#">奥地利</a></li>
+                <li><a href="#">匈牙利</a></li>
+                <li><a href="#">挪威</a></li>
+                <li><a href="#">丹麦</a></li>
+                <li><a href="#">芬兰</a></li>
+                <li><a href="#">冰岛</a></li>
+                <li><a href="#">瑞典</a></li>
+                <li><a href="#">俄罗斯</a></li>
+           </ul>
+          <li class="option"><a href="#"><i></i>美洲</a></li>
+          <ul class="American">
+                <li><a href="#">美国</a></li>
+                <li><a href="#">加拿大</a></li>
+                <li><a href="#">阿根</a></li>
+                <li><a href="#">巴西</a></li>
+                <li><a href="#">智利</a></li>
+                <li><a href="#">秘鲁</a></li>
+                <li><a href="#">古巴</a></li>
+                <li><a href="#">墨西哥</a></li>
+                <li><a href="#">南极</a></li>
+
+           </ul>
+
+    </ul>
+  </li>
+  </ul>
+</div> <!--轮播图以上的-->
+<div id="img_center">
+   <img src="images/img_center.jpg" width="250" height="100" />
+</div>
+<div id="travel_with">
+<li><a href="second/Noname1 (2).html"><img class="img" src="images/陪父母.jpg" width="296" height="187" /></a></li>
+<li><a href="second/Noname11.html"><img class="img" src="images/和朋友.jpg" width="296" height="187" /></a></li>
+<li><a href="#"><img class="img" src="images/和恋人.jpg" width="296" height="187" /></a></li>
+<li><a href="#"><img class="img" src="images/和孩子.jpg" width="296" height="187" /></a></li>
+</div>
+<li class="commend_place"><a href="#">热门推荐地</a></li>
+<div class="hot_place">
+<li><a href="index2.html" target="_blank"><img class="img" src="images/medf.png" width="396" height="225" /></a></li>
+<li><a href="index1.html" target="_blank"><img class="img" src="images/xila.png" width="396" height="225" /></a></li>
+<li><a href="#"><img class="img" src="images/usa.png" width="396" height="225" /></a></li>
+</div>
+<div id="question1">
+<div class="question2">
+<ul>
+<li><a href="#"><span class="travel_ask">旅行咨询</span><span class="Mo">MORE+</span></a></li>
+<hr width="350px"/>
+<li><a href="#">>&nbsp;去挪威旅游前需要了解的一些</a></li>
+<li><a href="#">>&nbsp;台湾旅游怎么玩才最省钱</a></li>
+<li><a href="#">>&nbsp;2018最新台湾旅游要多少钱</a></li>
+<li><a href="#">>&nbsp;十一国庆七天有什么好玩的景点?</a></li>
+<li><a href="#">>&nbsp;秋季旅游地区推</a></li>
+</ul>
+<ul>
+<li><a href="#"><span class="travel_ask">旅行问答</span><span class="Mo">MORE+</span></a></li>
+<hr width="350px"/>
+<li><a href="#">>&nbsp;去美国旅游前需要了解的一些</a></li>
+<li><a href="#">>&nbsp;上海旅游怎么玩才最省钱</a></li>
+<li><a href="#">>&nbsp;2018最热旅游地</a></li>
+<li><a href="#">>&nbsp;元旦最佳旅游地点</a></li>
+<li><a href="#">>&nbsp;冬季旅游地区推</a></li>
+</ul>
+<ul>
+<li><a href="#"><span class="travel_ask">旅行景点</span><span class="Mo">MORE+</span></a></li>
+<hr width="350px"/>
+<li><a href="#">>&nbsp;陕西五大美丽乡村体会诗意的生活 </a></li>
+<li><a href="#">>&nbsp;福建厦门旅游景点胡里山炮台 </a></li>
+<li><a href="#">>&nbsp;福建旅游厦门皓月园景点 </a></li>
+<li><a href="#">>&nbsp;台湾美到窒息的五大湖畔咖啡厅-梦境般...</a></li>
+<li><a href="#">>&nbsp;福建旅游厦门观音山沙雕公园</a> </li>
+</ul>
+</div>
+</div>
+<div class="daohang">
+  <ul>
+  <li class="DH1"><a href="#"><i></i></a></li>
+  <li><a href="#">快速提交需求单</a></li>
+  </ul>
+  <ul>
+  <li class="list">>&nbsp;></li>
+  </ul>
+  <ul>
+  <li  class="DH2"><a href="#"><i></i></a></li>
+  <li><a href="#">免费发送方案</a></li>
+  </ul>
+  <ul>
+  <li class="list">>&nbsp;></li>
+  </ul>
+  <ul>
+  <li class="DH3"><a href="#"><i></i></a></li>
+  <li><a href="#">沟通确认行程</a></li>
+  </ul>
+  <ul>
+  <li class="list">>&nbsp;></li>
+  </ul>
+  <ul>
+  <li class="DH4"><a href="#"><i></i></a></li>
+  <li><a href="#">签约愉悦出游</a></li>  </ul>
+</div>
+<div class="bottom_green">
+<li class="commend_i"><a href="#"><i></i>转项路线</a></li>
+<li class="commend_i"><a href="#"><i></i>价格透明</a></li>
+<li class="commend_i"><a href="#"><i></i>服务至上</a></li>
+<li class="commend_i"><a href="#"><i></i>安心品质</a></li>
+<li class="commend_i"><a href="#"><i></i>品牌价值</a></li>
+</div>
+<div class="black_bottom">
+<div class="black_left">
+<ul>
+<li class="c1"><a href="#">旅游</a></li>
+<li class="c"><a href="#">如何缴费</a></li>
+<li class="c"><a href="#">如何提交订单</a></li>
+<li class="c"><a href="#">如何收藏</a></li>
+</ul>
+<ul>
+<li class="c1"><a href="#">出境及港澳游</a></li>
+<li class="c"><a href="#">如何办理护照</a></li>
+<li class="c"><a href="#">如何办理旅游签</a></li>
+<li class="c"><a href="#">如何办理港澳通</a></li>
+</ul>
+<ul>
+<li class="c1"><a href="#">付款和发票</a></li>
+<li class="c"><a href="#">付款方式有哪些</a></li>
+<li class="c"><a href="#">发票索要及条件</a></li>
+<li class="c"><a href="#">发票的可开项目</a></li>
+</ul>
+<ul>
+<li class="c1"><a href="#">常见问题</a></li>
+<li class="c"><a href="#">旅游产品名词解</a></li>
+<li class="c"><a href="#">如何看懂旅游产</a></li>
+<li class="c"><a href="#">订单修改、退团</a></li>
+</ul>
+</div>
+<hr class="center_bottom" />
+<div class="black_right">
+<li class="i_final"><a href="#"><i></i>&nbsp;电话：&nbsp;15254117251/15254117286</a></li>
+<li class="i_final"><a href="#"><i></i>&nbsp;邮箱：&nbsp;211383130@qq.com</a></li>
+<li class="i_final"><a href="#"><i></i>&nbsp;地址：&nbsp;山东财经大学燕山校区4号314</a></li>
+</div>
+</div>
+<hr class="hr_bottom"/>
+<div class="black_bottom2">
+<li>京公网安备123456789号&nbsp;&nbsp;京ICP证11236号&nbsp;旅行社业务经营许可证编号12345</li>
+<li>国家旅游局投诉电话：010-123456&nbsp;&nbsp;SDCJDX3142018-2020,WWW.shandongcaijing.com</li>
+</div>
+</div>
+</body>
+</html>

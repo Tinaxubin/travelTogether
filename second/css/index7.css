@@ -1,0 +1,46 @@
+/*
+* @Author: Marte
+* @Date:   2018-12-22 16:55:31
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-12-22 21:24:12
+*/
+.fukuan {
+    height: 700px;
+    /* background-color: pink; */
+    position: relative;
+}
+.fukuan_look {
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -250px;
+    background-color: #fff;
+}
+.fukaun_look_hd {
+    height: 100px;
+}
+.look_hd_title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    color: #33B74A;
+}
+.look_hd_content {
+    height: 50px;
+    padding-left: 20px;
+}
+.look_hd_content a {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.fukuan_look_bd {
+    height: 400px;
+    width: 400px;
+    margin:  20px auto;
+    background-color: pink;
+}

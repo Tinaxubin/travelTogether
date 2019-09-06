@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>带你去旅行-巴厘岛4晚6日</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index3.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+</head>
+<body>
+    <div class="xq w">
+        <a name="ding"></a>
+        <!-- 顶部开始 -->
+        <div class="topban">
+            <a href="../travel with you.html">首页</a>
+            &nbsp;&nbsp;>&nbsp;&nbsp;
+            <a href="../index2.html">巴厘岛</a>
+            &nbsp;&nbsp;>&nbsp;&nbsp;
+            <span>【巴厘岛4晚6日 初体验】一次走进巴厘人生活的旅行</span>
+        </div>
+        <!-- 顶部结束 -->
+        <!-- 中间详情开始 -->
+        <div class="xq_travel">
+            <!-- 头部锚点开始 -->
+            <div class="xq_travel_lnav">
+                <ul>
+                    <li>
+                        <a href="#travel_info">旅行信息</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_special">行程亮点</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_route">行程安排</a>
+                    </li>
+                    <li class="space">|</li>
+                    <li>
+                        <a href="#travel_fee">费用说明</a>
+                    </li>
+                    <li class="fr">
+                        <span class="spa">￥5100</span><span>起/人</span>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                    window.onload = function () {
+                        let dv = document.querySelector('.xq_travel_lnav');
+                        window.onscroll = function () {
+                            let myscroll=document.documentElement.scrollTop;// 获取滚动条的滚动的距离
+                            let mybody=document.documentElement.clientHeight;//获取浏览器窗口的高度
+                            if(myscroll >= 20){              //判断距离是否到达当前位置
+                                dv.style.position='fixed';            // 添加定位
+                                dv.style.top='0px';
+                                //dv.style.right='100px'
+                            }else if(myscroll <20){        //小于当前位置取消定位
+                                dv.style.position='static';
+
+                            }
+                        }
+                    }
+                </script>
+            <!-- 头部锚点结束 -->
+            <!-- 旅行信息开始 -->
+            <a name="travel_info"></a>
+            <div class="xq_travel_info">
+                <div class="xq_travel_info_l fl">
+                    <div class="travel_info_big">
+                        <img src="images/balid_xq1.jpg" id="img"/>
+                    </div>
+                    <div class="info_mask">
+                        <ul id="ul">
+                            <li>
+                                <a href="images/balid_xq1.jpg">
+                                    <img src="images/balid_xq1.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/balid_xq2.jpg">
+                                    <img src="images/balid_xq2.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/balid_xq3.jpg">
+                                    <img src="images/balid_xq3.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/balid_xq5.jpg">
+                                    <img src="images/balid_xq5_small.jpg"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <script src="../js/comoon.js"></script>
+                        <script>
+                            var aObj=my$("ul").getElementsByTagName("a");
+                            for(var i=0;i<aObj.length;i++){
+                                aObj[i].onclick=function(){
+                                    my$("img").src=this.href;
+                                    return false;
+                                };
+
+                            };
+                        </script>
+                    </div>
+                </div>
+                <div class="xq_travel_info_r fr">
+                    <div class="info_r_comoon">
+                        <dl>
+                            <dt>行程天数</dt>
+                            <dd>6天</dd>
+                        </dl>
+                        <dl class="dl">
+                            <dt>出发地</dt>
+                            <dd>济南</dd>
+                        </dl>
+                        <dl class="dl">
+                            <dt>目的地</dt>
+                            <dd>巴厘岛</dd>
+                        </dl>
+                    </div>
+                    <div class="info_r_btn">
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=3337906405&site=qq&menu=yes">我要定制</a>
+                        <a href="index5.html">我要预订</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 旅行信息结束 -->
+            <!-- 行程亮点开始 -->
+            <a name="travel_special"></a>
+            <div class="travel_special">
+                <div class="tralve_special_title">
+                    <h4>
+                        <a href="#">行程亮点</a>
+                    </h4>
+                </div>
+                <div class="travel_special_content" id="travel_special">
+                    <ul>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq1.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>神鹰广场</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>据传一位高僧曾指点苏哈托，这座铜像将庇佑印尼国运昌盛、人民幸福平安。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq2.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>乌鲁瓦图断崖</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>乌鲁瓦图海神庙建于11世纪，用坚硬的花岗岩建造。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq4.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>大型舞台剧《天坛秀》</span>
+                                        <span>开放时间：12:00-21:00</span>
+                                        <p>你将从这一杂技、舞蹈、音乐相融合的出色表演中领略到浓浓的印尼风情！</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq5.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>乌布皇宫</span>
+                                        <span>开放时间：00:00-00:00</span>
+                                        <p>外观雄伟，石刻技术堪称一绝，手工精致细腻，金箔装饰让整个气氛更显辉煌。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq6.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>圣泉寺</span>
+                                        <span>开放时间：09:00-17:00</span>
+                                        <p>圣泉寺建筑规模宏大完整，从此处可以看到巴厘岛庙宇的所有特点。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq7.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>蓝梦岛</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>巴厘岛最漂亮的海和沙滩，附近可以潜水，岛东面的红树林可以坐小船穿行。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq8.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>库塔广场</span>
+                                        <span>开放时间：09:00-22:00</span>
+                                        <p>购物的好去吃，还可以品尝当地美食，感受当地风土人情</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="special_content_list">
+                                <a href="#">
+                                    <img src="images/balid_xq9.jpg" alt="推荐玩法1"/>
+                                    <div class="text">
+                                        <span>SPA2.5小时体验</span>
+                                        <span>开放时间：09:00-20:00</span>
+                                        <p>每一栋Villa都有双人的芳疗床、空调、浴缸、室外的淋浴、高级的室内设备。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="special_btn" id="special_btn">
+                    <a href="#"><em>更多景点</em><i></i></a>
+                </div>
+                <script src="../js/comoon.js"></script>
+                <script>
+                    var sObj=my$("special_btn");
+                    sObj.onclick=function(){
+                        my$("travel_special").style.height="650px";
+                        return false;
+                    };
+                </script>
+            </div>
+            <!-- 行程亮点结束 -->
+            <!-- 行程安排开始 -->
+            <a name="travel_route"></a>
+            <div class="travel_route clearfix" style="height:3130px;">
+                <div class="travel_route_title">
+                    <h4>
+                        <a href="#">行程安排</a>
+                    </h4>
+                </div>
+                <div class="travel_route_content clearfix" style="height:3070px;">
+                    <div class="route_content_left fl">
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D1</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>济南>巴厘岛</h4>
+                                    <p>早中晚饭自理</p>
+                                </div>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>搭乘国际航班飞往巴厘岛，抵达后专车接往酒店休息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D2</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>巴厘岛</h4>
+                                    <p>早餐-酒店用餐&nbsp;&nbsp;&nbsp;&nbsp;午餐、晚餐- 敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq1.jpg" alt="神鹰广场" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">神鹰广场</a></h4>
+                                            <p>神鹰广场是坐落在巴厘岛南部最高点——乌鲁瓦图的一个文化公园。Wisnu Kencana（梵文中的Vishnu神），是印度三位一体神之中的保护神，Garuda意为神鹰，是他的坐骑。之所以叫神鹰广场是因为原本这里要竖起一座世界上最高大的神鹰铜像，神鹰背上骑着巴厘岛的最高神明“破坏神”。</p>
+                                            <!-- <p>贴士：博物馆在周围是米娜巴扎集市，市井气息浓郁，很值得一逛。</p> -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq2.jpg" alt="乌鲁瓦图断崖" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">乌鲁瓦图断崖</a></h4>
+                                            <p>乌鲁瓦图悬崖是位于巴厘岛西南海岸的一座断崖，又被称为情人崖，传说有一对青年男女相爱却受到父母的阻挠，在这里跳海殉情。到巴厘岛的情侣都会在此合照，以期待爱情的美好长久。</p>
+                                            <p>贴士：乌鲁瓦图当地还有许多可爱的猴子，非常机灵调皮，游客需注意安全。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq3.jpg" alt="悦榕庄JuMaNa海景餐厅英式下午茶" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">悦榕庄JuMaNa海景餐厅英式下午茶</a></h4>
+                                            <p>JuMaNa酒吧位于巴厘岛悦榕庄内，座落在巴厘岛最南端靠近乌鲁瓦图寺海拔70米的悬崖上，精美如画的酒吧仿佛身处雅致的摩洛哥风情之中，四周便是绝美的印度洋海景。这里适合您在疲惫的一天过后小酌一杯，品味时尚的鸡尾酒和开胃酒，酒吧阿拉伯风味的小食和饮料。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq4.jpg" alt="巴厘岛壮观大型舞台剧《天坛秀》" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">巴厘岛壮观大型舞台剧《天坛秀》</a></h4>
+                                            <p>《天谭秀》是巴厘岛隆重登场的震撼壮观大型舞台剧，讲述的是一对年轻的少年来到了巴厘岛旅游，一路所领略到的巴厘岛的无限之美。90分钟的舞蹈表演将引领观众从巴厘岛出发，跨越爪哇岛、苏门答腊岛、婆罗洲至巴布亚岛，展现出精彩纷呈的巴厘民俗.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：【神鹰广场】来到巴厘岛一定要去神鹰广场,这是巴厘岛政府的一个梦想,这个文化公园是前印尼总统苏哈托时代开始新建的。</p>
+                                    <p>下午：【乌鲁瓦图断崖及神庙】是观看断崖海景的绝佳位置。这是巴厘岛典型的寺庙建筑，精雕细琢，非常优美。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D3</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>巴厘岛</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq5.jpg" alt="乌布皇宫" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">乌布皇宫</a></h4>
+                                            <p>位于巴厘岛最具艺术气息的乌布地区繁华地带，是乌布王朝聘请著名的艺术家蓝帕德（Lempad）所规划设计的，这栋在16世纪建筑而成的巴厘风情的皇宫，外观雄伟，且石刻技术堪称一绝，手工精致细腻，处处的金箔装饰让整个气氛更显辉煌富贵。</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq6.jpg" alt="圣泉寺" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">圣泉寺</a></h4>
+                                            <p>圣泉寺是“千寺之岛”巴厘岛上六大著名庙宇之一，依地下泉眼而建，因此得名。石头圣龛上早是苔痕斑斑，而泉涌依然如当年。圣泉寺建筑规模宏大完整，从此处可以看到巴厘岛庙宇的所有特点。</p>
+                                            <p>贴士：女性经期不允许入内，应注意着装的严肃性</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：I乌布皇宫</p>
+                                    <p>下午：圣泉寺</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D4</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>巴厘岛</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq7.jpg" alt="蓝梦岛" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">蓝梦岛</a></h4>
+                                            <p>蓝梦岛是位于巴厘岛东南边的一个离岛，距离Sanur渡轮码头约半小时船程。这里的海水清澈无比，水下生物清晰可见，因此也被称为“玻璃海”，置身此地仿佛身在马尔代夫一般。</p>
+                                            <p>贴士：从Sanur渡轮码头，半小时就可以到达。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>【蓝梦岛出海一日游】：【海底漫步】（约1小时），载上如同太空人载的圆形透明头盔.</p>
+                                    <p>【海上浮潜】浮潜于湛蓝海水中与热带鱼相恋，感受巴里岛美丽的海岸风情。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D5</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>巴厘岛</h4>
+                                    <p>早餐-酒店用餐 午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_middle">
+                                <ul>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq8.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">库塔广场</a></h4>
+                                            <p>这是一个购物的好去吃，还可以品尝当地美食，感受当地风土人情</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="day_middle_l fl">
+                                            <i></i>
+                                        </div>
+                                        <div class="day_middle_m fl">
+                                            <a href="#">
+                                                <img src="../second/images/balid_xq9.jpg" alt="迪拜博物馆" width="200" height="130">
+                                            </a>
+                                        </div>
+                                        <div class="day_middle_r fl">
+                                            <h4><a href="#" target="_self">REI LULUR SPA2.5小时体验</a></h4>
+                                            <p>深受日本旅客及旅游杂志大力推荐的Rei Wellness，拥有4栋私人SPA Villa，传统且漂亮的巴里岛式的建筑，茅草屋式的开放大厅以及能使您放松心灵的环境。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>上午：库塔广场-巴厘岛最出名的商业街，以库塔广场为中心。这是一条颇负盛名的街道，街道两旁的酒吧和饭馆里坐满了各国游客。</p>
+                                    <p>下午：spa体验馆。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_left_day">
+                            <div class="day_start">
+                                <div class="day_start_l fl">
+                                    <h1>D6</h1>
+                                </div>
+                                <div class="day_start_r fl">
+                                    <h4>巴厘岛>济南</h4>
+                                    <p>早餐、午餐、晚餐-敬请自理</p>
+                                </div>
+                            </div>
+                            <div class="day_end">
+                                <div class="day_end_l fl">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="day_end_r fl">
+                                    <p>根据航班时间，搭乘飞机飞回国内，结束愉快的行程。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="route_content_right fr"></div>
+                </div>
+            </div>
+            <!-- 行程安排结束 -->
+            <!-- 费用说明开始 -->
+            <a name="travel_fee"></a>
+            <div class="travel_fee">
+                <div class="travel_fee_title">
+                    <h4>
+                        <a href="#">费用说明</a>
+                    </h4>
+                </div>
+                <div class="travel_fee_content">
+                    <div class="fee_content_yes">
+                        <div class="content_yes_title">
+                            <h5>费用包括：</h5>
+                        </div>
+                        <div class="content_yes_content">
+                            <p>1、大交通：机票——往返经济舱机票含机场建设税（机票将统一出票，如遇政府或航空公司政策性调整燃油税费，在未出票的情况下将进行多退少补，敬请谅解。机票一经开出，不得更改、不得签转、不得退票）。</p>
+                            <p>2、当地交通：当地旅游车（保证一人一正座位，车型大小根据游客实际人数安排）。</p>
+                            <p>3、住宿：亚特兰蒂斯酒店或同级双人标准间，帆船酒店或同级双人标准间，芭芭比芭布酒店或同级双人标准间，噜噜啦啦酒店或同级双人标准间，迪拜公园酒店或同级双人标准间，吉隆坡诺夫尔酒店或同级双人标准间，此线路参考酒店为唯一指定入住酒店（遇不可抗力特殊情况除外），此线路酒店无三人间且不能加床。</p>
+                            <p>4、门票：包含迪拜博物馆、法拉利公园、酋长皇宫、阿布扎比清真寺、IMG冒险乐园、乐高主题乐园、宝莱坞乐园、卓美亚棕榈岛、疯狂维迪水上乐园、哈利法塔-124层的门票等等。</p>
+                            <p>5、用餐：含6早18正。</p>
+                            <p>6、旅游顾问：全程专职领队兼境外导游讲解服务。</p>
+                            <p>7、儿童价适用于2至12周岁（不含）的儿童。儿童价费用包含：仅含（往返飞机票，门票，导游费用，车位，用餐）费用，其余一切产生费用敬请自理。</p>
+                            <p>8、其他：含新签马签团队签费用，不含迪拜落地签费用，2-11周岁儿童不占床，12-18周岁必须占床请电询</p>
+                        </div>
+                    </div>
+                    <div class="fee_content_no">
+                        <div class="content_no_title">
+                            <h5>费用不包括：</h5>
+                        </div>
+                        <div class="content_no_content">
+                            <p>1、单人房差：酒店标准房房差 1600元/人。</p>
+                            <p>2、签证/签注：本产品不含个人旅游签证及申请签证中准备相关材料所需的制作、手续费，如所需的公证书、认证费 及其他额外费用，请在指定日期前自行办理好签证并递交我方。</p>
+                            <p>3、关税：出入境个人物品海关征税，超重行李的托运费、保管费。行程中酒店内洗衣、理发、电话、传真、收费电视、饮品、烟酒等个人消费。</p>
+                            <p>4、其他：不含泰国国内办理签及泰国落地签费用9月1日起，每位游客必须支付导游出差费每人每晚100泰铢或者20元人民币，敬请知晓</p>
+                            <p>5、保险：本产品不含旅游人身意外险，我们强烈建议游客购买，游客可在填写订单时勾选附加产品中的相关保险购买。</p>
+                            <p>6、游乐园项目：本产品费用中仅包含游乐场门票的费用，而游乐场内部娱乐项目的费用还需自费。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 费用说明结束 -->
+        </div>
+        <!-- 中间详情结束 -->
+        <div class="ding">
+            <a href="#ding">
+                <i></i>
+                <span>回到顶部</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
